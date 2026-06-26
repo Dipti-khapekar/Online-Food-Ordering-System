@@ -22,5 +22,5 @@ class OnlineFoodOrderingSystem:
     def add_to_cart(self):
         food_id = int(input("Enter Item ID: "))
 
-    def view_cart(slf):
+    def view_cart(self):
         pass
