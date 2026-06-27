@@ -18,7 +18,7 @@ while True:
         ofos.add_food_item()
 
     elif choice == "2":
-        ofos.display_menu()
+        ofos.display_manu()
 
     elif choice == "3":
         ofos.search_food_item()

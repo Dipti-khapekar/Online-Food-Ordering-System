@@ -10,7 +10,7 @@ class OnlineFoodOrderingSystem:
         name = input("Enter your Name: ")
         price = int(input("Entem Item Price: "))
 
-        food = FoodItem(self,item_id,name,price)
+        food = FoodItem(item_id,name,price)
         self.menu.append(food)
 
     def display_manu(self):
