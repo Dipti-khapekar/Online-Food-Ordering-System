@@ -5,7 +5,7 @@ class FoodItem:
         self.price = price
 
     def display(self):
-        print("item ID: {self.item_id}")
-        print("Name: {self.name}")
-        print("Price: ₹{self.price}")
+        print("item ID:", {self.item_id})
+        print("Name:", {self.name})
+        print("Price: ₹",{self.price})
         print("-" * 30)

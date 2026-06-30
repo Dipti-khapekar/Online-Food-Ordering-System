@@ -14,13 +14,34 @@ class OnlineFoodOrderingSystem:
         self.menu.append(food)
 
     def display_manu(self):
-        pass
+        if len(self.menu) == 0:
+            print("Menu is Empty.")
+        else:
+            print("\n--MENU--")
+            for item in self.menu:
+                item.display()
 
     def search_food_item(self):
         food_id = int(input("Enter Item ID to search: "))
 
+        for item in self.menu:
+            if item.item_id == food_id:
+                print("Food Item Found.")
+                item.display()
+                return
+            
+        print("Food Item Not Found.")
+
     def add_to_cart(self):
         food_id = int(input("Enter Item ID: "))
+
+        for item in self.menu:
+            if item.item_id == food_id:
+                self.cart.append(item)
+                print("Item Added to Cart successfully!")
+                return
+            
+        print("Item Not Found.")
 
     def view_cart(self):
         pass

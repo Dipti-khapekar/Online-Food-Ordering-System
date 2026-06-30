@@ -24,7 +24,7 @@ while True:
         ofos.search_food_item()
 
     elif choice == "4":
-        ofos.add_to_cart
+        ofos.add_to_cart()
 
     elif choice == "5":
         ofos.view_cart()
