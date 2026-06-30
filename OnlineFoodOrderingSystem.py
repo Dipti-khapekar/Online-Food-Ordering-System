@@ -44,4 +44,15 @@ class OnlineFoodOrderingSystem:
         print("Item Not Found.")
 
     def view_cart(self):
-        pass
+        if len(self.cart) == 0:
+            print("Cart is Empty.")
+        else:
+            total = 0
+
+            print("\n---CART---")
+            for item in self.cart:
+                print(f"{item.name} - ₹{item.price}")
+                total += item.price
+
+            print("-" * 30)
+            print("Total Bill:₹",total)
